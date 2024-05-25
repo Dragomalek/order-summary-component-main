@@ -1,0 +1,159 @@
+:root {
+  /* ## Colors
+
+### Primary */
+
+  --Pale_blue: hsl(225, 100%, 94%);
+  --Bright_blue: hsl(245, 75%, 52%);
+
+  /* ### Neutral */
+
+  --Very_pale_blue: hsl(225, 100%, 98%);
+  --Desaturated_blue: #7280a7;
+  --Dark_blue: #1f2f56;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  transition: all 0.4s;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  background-color: var(--Pale_blue);
+  object-fit: cover;
+}
+
+main {
+  margin: 16vh;
+  width: 28rem;
+  border-radius: 1rem;
+  background-color: white;
+  padding-bottom: 2rem;
+  box-shadow: 5px 11px 42px 1px rgba(114, 128, 167, 0.6);
+}
+
+#hero-img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+picture #hero {
+  border-radius: 1rem;
+}
+
+#principal h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 1rem;
+}
+
+#principal p {
+  text-align: center;
+  padding: 0rem 4rem;
+}
+
+#plan {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--Very_pale_blue);
+  border-radius: 1rem;
+  margin: 1rem 3rem;
+  padding: 1.2rem;
+  align-items: center;
+}
+
+#anual-plan {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 1rem;
+}
+
+span {
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+
+p {
+  color: var(--Desaturated_blue);
+}
+
+#div-button {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border-style: none;
+  color: white;
+}
+
+a {
+  font-weight: 700;
+}
+
+a:hover {
+  color: hsla(245, 75%, 52%, 0.685);
+}
+
+#button-payment {
+  background-color: var(--Bright_blue);
+  margin: 1rem 3rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 900;
+  box-shadow: 5px 11px 42px 1px hsla(245, 75%, 52%, 0.377);
+}
+
+#button-payment:hover {
+  background-color: hsla(245, 75%, 52%, 0.685);
+  cursor: pointer;
+  box-shadow: 5px 11px 12px 0px rgba(114, 128, 167, 0.6);
+}
+
+#button-cancel {
+  color: var(--Desaturated_blue);
+  font-weight: 900;
+  font-size: 0.9rem;
+  background-color: transparent;
+  margin: 0rem 3rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+#button-cancel:hover {
+  cursor: pointer;
+  color: black;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+  main {
+    height: 90vh;
+    width: 90vw;
+    margin: 2rem 1rem;
+  }
+
+  #plan {
+    margin: 1rem 1rem;
+    padding: 1.2rem;
+  }
+  #principal p {
+    padding: 1rem 2rem;
+  }
+}
